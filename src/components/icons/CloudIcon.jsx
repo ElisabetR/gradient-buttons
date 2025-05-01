@@ -13,7 +13,7 @@ const IconWrapper = styled.span`
   text-shadow: 0px 1.5px 3px rgba(255, 255, 255, 0.45);
 `;
 
-const iconObject = {pin: '􀎦',  sun: '􀆫', cloud: '􀇂', moon: '􀆹', map: '􀙊'}
+const iconObject = {pin: '􀎦',  sun: '􀆫', cloud: '􀇂', moon: '􀆹', map: '􀙊', person: '􀉩',  lock: '􀎠', folder: '􀈕'}
 
 const CloudIcon = ({ size = 14, icon = 'pin', color = 'rgb(0, 0, 0, 0.6)', className }) => {
   return (
