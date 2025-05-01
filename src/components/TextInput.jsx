@@ -17,7 +17,7 @@ const StyledInput = styled.div`
   justify-content: flex-start;
   gap: 4px;
   padding-left: 6px;
-  height: 28px;
+  height: 40px;
   border-radius: 10px;
   border: 2.5px solid ${props => props.baseColor};
   width: 100%;
@@ -33,8 +33,9 @@ const StyledInput = styled.div`
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.55);
   font-family: 'Instrument Serif', serif;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 400;
+  letter-spacing: -0.02em;
   line-height: 1.3;
   text-shadow: 0px 1.5px 3px rgba(255, 255, 255, 0.45);
 
@@ -82,7 +83,7 @@ const StyledInput = styled.div`
       background: 
         linear-gradient(180deg,
           rgba(255, 255, 255, 0.8) 0%,
-          rgba(255, 255, 255, 0) 100%
+          rgba(216, 40, 40, 0) 100%
         ) border-box;
     }
   }
@@ -119,7 +120,7 @@ const StyledInput = styled.div`
     border: 2.5px solid transparent;
     background: 
       linear-gradient(180deg,
-        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.5) 0%,
         rgba(255, 255, 255, 0) 100%
       ) border-box;
     -webkit-mask:

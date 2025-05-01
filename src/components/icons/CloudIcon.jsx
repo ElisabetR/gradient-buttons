@@ -10,12 +10,13 @@ const IconWrapper = styled.span`
   font-size: ${props => props.size}px;
   line-height: 1.19;
   color: ${props => props.color};
+  padding-bottom: 3px;
   text-shadow: 0px 1.5px 3px rgba(255, 255, 255, 0.45);
 `;
 
 const iconObject = {pin: '􀎦',  sun: '􀆫', cloud: '􀇂', moon: '􀆹', map: '􀙊', person: '􀉩',  lock: '􀎠', folder: '􀈕'}
 
-const CloudIcon = ({ size = 14, icon = 'pin', color = 'rgb(0, 0, 0, 0.6)', className }) => {
+const CloudIcon = ({ size = 22, icon = 'pin', color = 'rgb(0, 0, 0, 0.6)', className }) => {
   return (
     <IconWrapper size={size} color={color} className={className}>
       {iconObject[icon]}
@@ -30,7 +31,7 @@ CloudIcon.propTypes = {
 };
 
 CloudIcon.defaultProps = {
-  size: 14,
+  size: 24,
   color: '#FFFFFF',
   className: undefined,
 };

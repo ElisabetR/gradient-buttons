@@ -90,7 +90,7 @@ function App() {
             baseColor="#FFC09F"
             icon="moon"
           >
-            Dark Mode
+            Dark mode
           </Button>
         </div>
         <div className="grid-item" style={{ gridColumn: '3 / 5', gridRow: '5 / 6' }}>
@@ -108,7 +108,7 @@ function App() {
             baseColor="#CBEFF1"
             icon="cloud"
           >
-            Upload Files
+            Upload files
           </Button>
         </div>
         <div className="grid-item" style={{ gridColumn: '4 / 6', gridRow: '6 / 7' }}>
@@ -125,7 +125,7 @@ function App() {
             baseColor="#C9E4DE"
             icon="sun"
           >
-            Light Mode
+            Light mode
           </Button>
         </div>
         <div className="grid-item" style={{ gridColumn: '3 / 5', gridRow: '7 / 8' }}>

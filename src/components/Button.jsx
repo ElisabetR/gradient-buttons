@@ -2,14 +2,28 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import CloudIcon from './icons/CloudIcon';
 
+const ButtonText = styled.span`
+  color: rgba(0, 0, 0, 0.55);
+  font-family: 'Instrument Serif', serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  text-shadow: 0px 1.5px 3px rgba(255, 255, 255, 0.45);
+`;
+
+const StyledCloudIcon = styled(CloudIcon)`
+  color: rgba(0, 0, 0, 0.55);
+`;
+
 const StyledButton = styled.button`
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  padding: 6px;
-  height: 30px;
+  padding: 12px;
+  height: 40px;
   border-radius: 10px;
   border: none;
   background: 
@@ -82,6 +96,10 @@ const StyledButton = styled.button`
     background-blend-mode: plus-darker;
     transform: translateY(-1px);
 
+    ${ButtonText}, ${StyledCloudIcon} {
+      color: rgba(0, 0, 0, 0.35);
+    }
+
     &::before {
       background: 
         linear-gradient(180deg,
@@ -102,21 +120,10 @@ const StyledButton = styled.button`
   }
 `;
 
-const ButtonText = styled.span`
-  color: rgba(0, 0, 0, 0.55);
-  font-family: 'Instrument Serif', serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.3;
-  text-shadow: 0px 1.5px 3px rgba(255, 255, 255, 0.45);
-`;
-
-
-
 const Button = ({ children, icon = 'pin', showIcon = true, baseColor = '#CBEFF1', onClick, ...props }) => {
   return (
     <StyledButton onClick={onClick} baseColor={baseColor} {...props}>
-      {showIcon && <CloudIcon icon={icon} />}
+      {showIcon && <StyledCloudIcon icon={icon} />}
       <ButtonText>{children}</ButtonText>
     </StyledButton>
   );
